@@ -1,0 +1,10 @@
+footer {
+    height: 70px;
+    background-color: black;
+    grid-area: footer;
+    .iconos-footer {
+        @include flex (none, center, center);
+        gap: 20px;
+        padding-top: 15px;
+    }
+}

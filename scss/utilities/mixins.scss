@@ -1,0 +1,36 @@
+// Mixin Flex
+
+@mixin flex ($color, $justify, $align){
+    display: flex;
+    color: $color;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// Mixin Nav
+
+@mixin nav ($color, $weight, $decoration, $padding){
+    color: $color;
+    font-weight: $weight;
+    text-decoration: $decoration;
+    padding: $padding;
+}
+
+// Mixin Grid
+
+@mixin grid ($col, $row, $area){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    grid-template-areas: $area;
+}
+
+// Mixin Posicionamiento
+
+@mixin position ($cs, $ce, $rs, $re){
+    grid-column-start: $cs;
+    grid-column-end: $ce;
+    grid-row-start: $rs;
+    grid-row-end: $re;
+}
+

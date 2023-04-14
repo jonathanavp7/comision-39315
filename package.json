@@ -1,0 +1,11 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "Este proyecto llamado \"MedicPC\" es un sitio web enfocado a la asistencia informática/electrónica, brinda numerosas soluciones y tecnologías en los diferentes sectores de este campo. Cuenta con personal experto y dedicado para ayudarte con cualquier problema que necesites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

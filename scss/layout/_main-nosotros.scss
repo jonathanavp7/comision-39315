@@ -8,47 +8,57 @@
     @include grid (1fr 1fr 1fr, 1fr 1fr 1fr, "area-1 area-1 area-2" ". area-3 area-3" "area-4 area-4 .");
     gap: 0px 0px;
     grid-auto-flow: row;
+    
     h2 {
         font-size: 1.87rem;
-        font-family: 'Bree Serif', serif;
+        font-family: $font-primaria;
     }
+    
     .area-1 {
         grid-area: area-1;
-        color: white;
+        color: $font-color;
         align-self: center;
         padding-top: 50px;
+        
         p {
             font-size: 1.12rem;
             padding-top: 20px;
             text-align: justify;
         }
     }
+    
     .area-2 {
         grid-area: area-2;
+        
         img {
             width: 350px;
             height: 350px;
             margin: 30px;
         }
     }
+    
     .area-3 {
         grid-area: area-3;
-        color: white;
+        color: $font-color;
         align-self: center;
         padding-right: 20px; 
+        
         h2 {
             padding-left: 450px;
         }
+        
         p {
             font-size: 1.12rem;
             padding-top: 20px;
             text-align: justify;
         }
     }
+    
     .area-4 {
         grid-area: area-4;
-        color: white;
+        color: $font-color;
         align-self: center;
+        
         p {
             font-size: 1.12rem;
             padding-top: 20px;

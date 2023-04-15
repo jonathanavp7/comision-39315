@@ -41,3 +41,10 @@
     color: $color;
     font-weight: $weight;
 }
+
+// Mixin tamaño imagen
+
+@mixin tamaño ($width, $height){
+    width: $width;
+    height: $height;
+}

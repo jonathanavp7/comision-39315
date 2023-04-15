@@ -1,0 +1,113 @@
+// INDEX
+
+@media(max-width:1024px){
+    
+    .grid-index {
+        grid-template-rows: 100px 650px 70px;
+    }
+
+    .banner {
+        background-image: url(../assets/img/fondo.png);
+        @include tamaño (100%, 650px);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+
+        .leer-mas-inicio {
+            @include position (1, 7, 4, 6);
+            justify-self: center;
+            align-self: center;
+            padding-top: 50px;
+        }
+
+        .isotipo {
+            padding-right: 20px;
+
+            img {
+                @include tamaño (380px, 380px);
+            }
+        }
+    }
+}
+
+// SERVICIOS
+
+@media(max-width:1024px){
+    
+    .h1-servicios{
+        padding: 40px 0 10px 50px;
+        color: $font-color;
+        font-size: 1.87rem;
+    }
+    
+    .container-servicios {
+        .cards {
+            @include tamaño (250px, 620px);
+            border-radius: 8px;
+
+            img {
+                @include tamaño (220px, 150px);
+            }
+
+            input {
+                padding: 15px 25px;
+            }
+        }
+    }
+}
+
+// NOSOTROS
+
+@media(max-width:1024px){
+    
+    .grid-nosotros{
+        grid-template-rows: 100px 1600px 70px;
+    }
+
+    .container {
+        .area-2 {
+            align-self: center;
+        }
+
+        .area-3 {
+            h2 {
+                padding-left: 330px;
+            }
+        }
+    }
+}
+
+// CONTACTO
+
+@media(max-width:1024px){
+    
+    .contenedor {
+        .contenedor-contacto {
+            h1 {
+                font-size: 1.87rem;
+            }
+    
+            .ubicacion {
+                .mapa {
+                    iframe {
+                        @include tamaño (300px, 200px);
+                    }
+                }
+            }
+    
+            .redes-sociales {
+                .enlaces {
+                    font-size: 0.87rem;
+                }
+            }
+        }
+    }
+}
+
+// LEER MÁS
+
+@media(max-width:1024px){
+    
+    .contenedor-leer-mas{
+        padding: 50px 50px;
+    }
+}

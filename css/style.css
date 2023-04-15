@@ -290,6 +290,7 @@ main {
   grid-row-end: 1;
   font-size: 2.18rem;
   padding-top: 40px;
+  color: white;
 }
 .contenedor .contenedor-contacto .telefonos {
   grid-column-start: 1;
@@ -328,6 +329,63 @@ main {
   padding-bottom: 20px;
   font-size: 1.56rem;
   font-family: "Bree Serif", serif;
+}
+.contenedor .contenedor-contacto .redes-sociales .enlaces .facebook {
+  padding-top: 20px;
+}
+.contenedor .contenedor-contacto .redes-sociales .enlaces .facebook a {
+  padding: 5px 5px 5px 10px;
+  color: white;
+  font-weight: 700;
+}
+.contenedor .contenedor-contacto .redes-sociales .enlaces .linkedin {
+  padding-top: 20px;
+}
+.contenedor .contenedor-contacto .redes-sociales .enlaces .linkedin a {
+  padding: 5px 5px 5px 10px;
+  color: white;
+  font-weight: 700;
+}
+.contenedor .contenedor-contacto .redes-sociales .enlaces .instagram {
+  padding-top: 20px;
+}
+.contenedor .contenedor-contacto .redes-sociales .enlaces .instagram a {
+  padding: 5px 5px 5px 10px;
+  color: white;
+  font-weight: 700;
+}
+.contenedor .contenedor-contacto .redes-sociales .enlaces .twitter {
+  padding-top: 20px;
+}
+.contenedor .contenedor-contacto .redes-sociales .enlaces .twitter a {
+  padding: 5px 5px 5px 10px;
+  color: white;
+  font-weight: 700;
+}
+.contenedor .contenedor-contacto .ubicacion {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.contenedor .contenedor-contacto .ubicacion h3 {
+  color: #c48e47;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-size: 1.56rem;
+  font-family: "Bree Serif", serif;
+}
+.contenedor .contenedor-contacto .ubicacion p {
+  color: white;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  text-align: justify;
+}
+.contenedor .contenedor-contacto .ubicacion .mapa iframe {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 20px 20px #c48e47;
 }
 
 footer {

@@ -34,3 +34,10 @@
     grid-row-end: $re;
 }
 
+// Mixin Redes Sociales 
+
+@mixin redes ($padding, $color, $weight){
+    padding: $padding;
+    color: $color;
+    font-weight: $weight;
+}

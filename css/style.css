@@ -388,6 +388,36 @@ main {
   box-shadow: 20px 20px #c48e47;
 }
 
+.grid-leer-mas {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1200px 70px;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.contenedor-leer-mas {
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+.contenedor-leer-mas h1 {
+  font-size: 2.18rem;
+  color: white;
+}
+.contenedor-leer-mas h2 {
+  color: #c48e47;
+  padding: 50px 0 20px 30px;
+  font-size: 1.56rem;
+  font-family: "Bree Serif", serif;
+}
+.contenedor-leer-mas p {
+  color: white;
+  text-align: justify;
+  padding: 0 30px 50px 30px;
+}
+
 footer {
   height: 70px;
   background-color: black;

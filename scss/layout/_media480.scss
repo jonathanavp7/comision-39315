@@ -1,0 +1,285 @@
+// INDEX
+
+@media(max-width: 480px){
+    
+    .grid-index {
+        grid-template-rows: 100px 900px 70px;
+
+        header {
+            .logo {
+                img {
+                    @include tamaño (200px, 30px);
+                }
+            }
+        }
+
+        .banner {
+            background-image: url(../assets/img/fondo.png);
+            width: 100%;
+            height: 900px;
+            background-repeat: no-repeat;
+            background-position-y: bottom;
+    
+            .isotipo {
+                @include position (2, 12, 2, 5);
+                justify-self: center;
+                align-self: center;
+            }
+    
+            h1{
+                font-size: 2.18rem;
+                @include position (2, 12, 5, 7);
+                padding-bottom: 50px;
+            }
+    
+            .leer-mas-inicio{
+                @include position (4, 10, 6, 7);
+                justify-self: center;
+                align-self: center;
+                padding-top: 50px;
+            }
+        }
+
+        footer {
+            .iconos-footer {
+                padding-top: 20px;
+
+                img {
+                    @include tamaño (30px, 30px);
+                }
+            }
+        }
+    } 
+}
+
+// SERVICIOS
+
+@media(max-width:480px){
+    
+    .grid-servicios {
+
+        header {
+            padding-top: 20px;
+
+            .logo {
+                img {
+                    @include tamaño (200px, 30px);
+                }
+            }
+        }
+
+        .container-servicios {  
+            @include grid (1fr 1fr, 1fr 1fr 1fr, "item1 item2" "item3 item4" "item5 item6");
+            gap: 10px 10px;
+            grid-auto-flow: row;
+
+            .item1 { grid-area: item1; }
+            .item2 { grid-area: item2; }
+            .item3 { grid-area: item3; }
+            .item4 { grid-area: item4; }
+            .item5 { grid-area: item5; }
+            .item6 { grid-area: item6; }
+
+            .cards {
+                @include tamaño (170px, 570px);
+                padding-top: 20px;
+
+                img {
+                    @include tamaño (150px, 100px);
+                }
+
+                h3 {
+                    font-size: 1.12rem;
+                }
+
+                p {
+                    font-size: 0.75rem;
+                }
+
+                input {
+                    padding: 10px 20px;
+                    font-size: 0.75rem;
+                }
+            }
+        }
+
+        footer {
+            .iconos-footer {
+                padding-top: 20px;
+
+                img {
+                    @include tamaño (30px, 30px);
+                }
+            }
+        }
+    }
+}
+
+// NOSOTROS
+
+@media(max-width:480px){
+    
+    .grid-nosotros {
+        grid-template-rows: 100px 2300px 70px;
+
+        header {
+            padding-top: 20px;
+
+            .logo {
+                img {
+                    @include tamaño (200px, 30px);
+                }
+            }
+        }
+
+        .container {  
+            @include grid (1fr, repeat(4, 500px), "area-1" "area-2" "area-3" "area-4");
+            gap: 0px 0px;
+            padding-left: 30px;
+            padding-right: 40px;
+            grid-auto-flow: row;
+
+            .area-1 {
+                padding: 70px 0 0 0;
+            }
+    
+            .area-3 {
+                padding: 0;
+    
+                h2 {
+                    padding: 0;
+                }
+            }
+    
+            .area-4 {
+                padding: 100px 0 0 0;
+            }
+        }
+
+        footer {
+            .iconos-footer {
+                padding-top: 20px;
+
+                img {
+                    @include tamaño (30px, 30px);
+                }
+            }
+        }
+    }
+}
+
+// CONTACTO
+
+@media(max-width:480px){
+    
+    .grid-contacto{
+        grid-template-rows: 100px 900px 70px;
+
+        header {
+            padding-top: 20px;
+
+            .logo {
+                img {
+                    @include tamaño (200px, 30px);
+                }
+            }
+        }
+
+        .contenedor-contacto {
+            h1 {
+                font-size: 1.56rem;
+            }
+
+            .telefonos {
+                h3 {
+                    font-size: 1rem;
+                }
+
+                .telefonos-1 {
+                    img {
+                        @include tamaño (30px, 30px);
+                    }
+                }
+            }
+
+            .redes-sociales {
+                @include position (2, 3, 2, 6);
+
+                img {
+                    @include tamaño (25px, 25px);
+                }
+
+                a {
+                    font-size: 0.37rem;
+                }
+
+                h3 {
+                    font-size: 1rem;
+                }
+            }
+
+            .ubicacion {
+                @include position (1, 3, 4, 9);
+
+                h3 {
+                    padding-top: 50px;
+                    font-size: 1rem;
+                }
+
+                .mapa {
+                    padding-left: 50px;
+
+                    iframe {
+                        @include tamaño (300px, 200px);
+                    }
+                }
+            }
+        }
+
+        footer {
+            .iconos-footer {
+                padding-top: 20px;
+
+                img {
+                    @include tamaño (30px, 30px);
+                }
+            }
+        }
+    }
+}
+
+// LEER MÁS 
+
+@media(max-width:480px){
+    
+    .grid-leer-mas {
+        grid-template-rows: 100px 1800px 70px;
+
+        header {
+            padding-top: 20px;
+
+            .logo {
+                img {
+                    @include tamaño (200px, 30px);
+                }
+            }
+        }
+
+        .contenedor-leer-mas {
+            h1 {
+                font-size: 1.87rem;
+                padding-top: 20px;
+            }
+        }
+
+        footer {
+            .iconos-footer {
+                padding-top: 20px;
+
+                img {
+                    @include tamaño (30px, 30px);
+                }
+            }
+        }
+    }
+}

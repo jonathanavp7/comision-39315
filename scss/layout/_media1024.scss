@@ -107,7 +107,18 @@
 
 @media(max-width:1024px){
     
-    .contenedor-leer-mas{
-        padding: 50px 50px;
+    .grid-leer-mas {
+        .contenedor-leer-mas{
+            padding: 50px 50px;
+        }
+    }
+}
+
+@media(min-width:1024px){
+    
+    .grid-leer-mas {
+        .contenedor-leer-mas{
+            padding: 50px 50px;
+        }
     }
 }

@@ -18,8 +18,22 @@ main {
     
     .isotipo {
         img {
-            width: 450px;
-            height: 450px;
+            @include tamaño (450px, 450px);
+            @include position (8, 13, 2, 4);
+            justify-self: center;
+            animation: move-vector 4s linear infinite;
+        }
+
+        @keyframes move-vector {
+            0% {
+                transform: translateY(15px);
+            }
+            50% {
+                transform: translateY(0px);
+            }
+            100% {
+                transform: translateY(15px);
+            }
         }
     }
     
@@ -46,6 +60,13 @@ main {
             background-color: $color-primario;
             text-decoration: none;
             color: black;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background-color: #886435;
+                padding: 20px 62px;
+                color: black;
+            }
         }
     } 
     

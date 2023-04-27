@@ -1,10 +1,12 @@
 // Mixin Flex
 
-@mixin flex ($color, $justify, $align){
+@mixin flex ($color, $just-self, $just-cont, $align, $text){
     display: flex;
     color: $color;
-    justify-content: $justify;
-    align-items: $align;
+    justify-self: $just-self;
+    justify-content: $just-cont;
+    align-self: $align;
+    text-align: $text;
 }
 
 // Mixin Nav
@@ -34,15 +36,7 @@
     grid-row-end: $re;
 }
 
-// Mixin Redes Sociales 
-
-@mixin redes ($padding, $color, $weight){
-    padding: $padding;
-    color: $color;
-    font-weight: $weight;
-}
-
-// Mixin tamaño imagen
+// Mixin tamaño
 
 @mixin tamaño ($width, $height){
     width: $width;

@@ -1,11 +1,16 @@
 footer {
-    height: 70px;
+    @include tamaño (100%, 100%);
+    padding: 20px 0;
     background-color: black;
-    grid-area: footer;
-    
+
     .iconos-footer {
-        @include flex (none, center, center);
-        gap: 20px;
-        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            @include tamaño (30px, 30px);
+        }
     }
 }

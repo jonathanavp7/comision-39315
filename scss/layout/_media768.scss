@@ -17,12 +17,6 @@
             }
         }
     }
-
-    footer {
-        .iconos-footer {
-            gap: 15px;
-        }
-    }
 }
 
 // SERVICIOS
@@ -38,6 +32,22 @@
                 align-self: center;
                 @include tamaño (300px, 250px);
             }
+        }
+    } 
+}
+
+// NOSOTROS
+
+@media (min-width:768px){
+    .container {
+        .area-1 {
+            h2 {
+                padding-top: 40px;
+            }
+        } 
+
+        .area-2 {
+            @include flex (none, center, center, none, center);
         }
     } 
 }

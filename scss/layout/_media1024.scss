@@ -98,3 +98,18 @@
         }
     }
 }
+
+// NOSOTROS
+
+@media (min-width: 1024px){
+    .grid-nosotros {
+        .container {
+            h2 {
+                font-size: 2rem;
+                text-align: start;
+                justify-self: start;
+                justify-content: start;
+            }
+        } 
+    } 
+}

@@ -67,3 +67,62 @@
         }
     } 
 }
+
+// NOSOTROS
+
+@media (min-width: 1366px){
+    .grid-nosotros {
+        .container {
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-template-rows: repeat(3, 500px);
+            grid-template-areas: 
+            "area-1 area-2"
+            "area-3 area-3"
+            "area-4 area-4"
+            ;
+    
+            .area-1 {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                padding-right: 50px;
+            }
+    
+            .area-2 {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                align-self: center;
+                padding-left: 50px;
+    
+                img {
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+    
+            .area-3 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                padding-left: 300px;
+                padding-bottom: 40px;
+                align-self: center;
+            }
+    
+            .area-4 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 4;
+                align-self: self-end;
+                padding-right: 350px;
+                padding-bottom: 75px;
+            }
+        }
+    }
+}

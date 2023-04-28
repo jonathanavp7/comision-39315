@@ -1,0 +1,43 @@
+// INDEX
+
+@media (min-width: 1366px){
+    .banner {
+        @include tamaño (100%, 700px);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        background-position-y: center;
+
+        .isotipo {
+            padding-left: 100px;
+
+            img {
+                @include tamaño (480px, 480px);
+            }
+        }
+
+        h1 {
+            text-align: start;
+            font-size: 2.5rem;
+            padding-right: 70px;
+            padding-bottom: 150px;
+        }
+
+        .leer-mas-inicio {
+            padding-left: 140px;
+            padding-bottom: 50px;
+            justify-self: start;
+            align-self: center;
+
+            a {
+                @include tamaño (200px, 65px);
+
+                &:hover {
+                    background-color: #886435;
+                    @include tamaño (205px, 70px);
+                    color: black;
+                }
+            }
+        }
+    }
+}

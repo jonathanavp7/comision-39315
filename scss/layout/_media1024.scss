@@ -1,0 +1,47 @@
+//INDEX
+
+@media (min-width: 1024px){
+    .navbar-brand {
+        padding: 25px 20px;
+    }
+    
+    .banner {
+        @include tamaño (100%, 650px);
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100%;
+        background-position-y: start;
+
+        h1 {
+            @include position (1, 2, 1, 2);
+            font-size: 2.20rem;
+        }
+
+        .isotipo {
+            @include position (2, 3, 1, 2);
+            align-self: center;
+            padding-bottom: 50px;
+
+            img {
+                @include tamaño (390px, 390px);
+            }
+        }
+
+        .leer-mas-inicio {
+            @include position (1, 2, 1, 2);
+            align-self: center;
+            padding-top: 70px;
+
+            a {
+                @include tamaño (170px, 60px);
+                transition: all 0.3s ease;
+
+                &:hover {
+                    @include tamaño (180px, 65px);
+                    background-color: #886435;
+                    color: black;
+                }
+            }
+        }
+    }
+}

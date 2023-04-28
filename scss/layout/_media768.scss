@@ -24,3 +24,20 @@
         }
     }
 }
+
+// SERVICIOS
+
+@media (min-width: 768px){
+    .container-servicios {
+        .cards {
+            display: flex;
+            @include tamaño (600px, 350px);
+
+            img {
+                display: flex;
+                align-self: center;
+                @include tamaño (300px, 250px);
+            }
+        }
+    } 
+}

@@ -6,3 +6,16 @@
         background-size: cover;
     }
 }
+
+// CONTACTO 
+
+@media (min-width: 1440px){
+    .contenedor {
+        .contenedor-contacto {
+            h1 {
+                justify-self: start;
+                padding-left: 30px;
+            }
+        }
+    }
+}

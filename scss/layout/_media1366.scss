@@ -126,3 +126,57 @@
         }
     }
 }
+
+// CONTACTO
+
+@media (min-width: 1366px){
+    .contenedor {
+        @include tamaño (100%, 1000px);
+
+        .contenedor-contacto {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: repeat(4, 200px);
+
+            h1 {
+                @include position (1, 2, 1, 2);
+                align-self: self-start;
+                padding-top: 70px;
+                font-size: 2.10rem;
+            }
+
+            .telefonos {
+                @include position (1, 2, 2, 3);
+                align-self: center;
+                padding-bottom: 80px;
+            }
+
+            .redes-sociales {
+                @include position (1, 2, 3, 5);
+                padding-top: 30px;
+            }
+
+            .ubicacion {
+                @include position (2, 3, 1, 5);
+                align-self: center;
+                padding-top: 120px;
+
+                .mapa {
+                    iframe {
+                        @include tamaño (450px, 320px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// LEER MÁS
+
+@media (min-width: 1366px){
+    .grid-leer-mas {
+        .contenedor-leer-mas {
+            padding: 0 70px;
+        }
+    } 
+}

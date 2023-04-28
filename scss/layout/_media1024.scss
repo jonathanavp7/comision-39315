@@ -33,11 +33,11 @@
             padding-top: 70px;
 
             a {
-                @include tamaño (170px, 60px);
+                padding: 15px 40px;
                 transition: all 0.3s ease;
 
                 &:hover {
-                    @include tamaño (180px, 65px);
+                    padding: 18px 45px;
                     background-color: #886435;
                     color: black;
                 }
@@ -104,14 +104,92 @@
 @media (min-width: 1024px){
     .grid-nosotros {
         .container {
-            h2 {
-                font-size: 2rem;
-                text-align: start;
-                justify-self: start;
-                justify-content: start;
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-template-rows: repeat(3, 500px);
+            grid-template-areas: 
+            "area-1 area-2"
+            "area-3 area-3"
+            "area-4 area-4"
+            ;
+    
+            .area-1 {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                padding-right: 50px;
             }
-        } 
-    } 
+    
+            .area-2 {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                align-self: center;
+                padding-left: 20px;
+    
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+    
+            .area-3 {
+                display: flex;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                padding-bottom: 40px;
+                align-self: start;
+                gap: 100px;
+
+                .img1-nosotros {
+                    display: flex;
+                    padding-left: 40px;
+                    justify-self: start;
+                    align-self: center;
+
+                    img {
+                        width: 120px;
+                        height: 120px;
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                    }
+                }
+            }
+            .area-4 {
+                display: flex;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 4;
+                align-self: self-end;
+                padding-bottom: 75px;
+                gap: 100px;
+
+                .img2-nosotros {
+                    display: flex;
+                    padding-right: 40px;
+                    padding-top: 50px;
+                    justify-self: end;
+                    align-self: center;
+                    
+                    img {
+                        width: 120px;
+                        height: 120px;
+                        grid-column-start: 2;
+                        grid-column-end: 3;
+                        grid-row-start: 3;
+                        grid-row-end: 4;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // CONTACTO
@@ -143,6 +221,44 @@
                 padding-top: 50px;
 
                 .enlaces {
+                    gap: 20px;
+
+                    .facebook {
+                        a {
+                            padding-left: 2px;
+                        }
+
+                        .link-f {
+                            padding-left: 30px;
+                        }
+                    }
+
+                    .linkedin {
+                        a {
+                            padding-left: 2px;
+                        }
+
+                        .link-f {
+                            padding-left: 30px;
+                        }
+                    }
+
+                    .instagram {
+                        a {
+                            padding-left: 2px;
+                        }
+
+                        .link-f {
+                            padding-left: 28px;
+                        }
+                    }
+
+                    .twitter {
+                        .link-f {
+                            padding-left: 20px;
+                        }
+                    }
+
                     a {
                         font-size: 0.87rem;
                     }

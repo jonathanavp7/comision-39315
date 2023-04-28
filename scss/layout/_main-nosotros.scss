@@ -11,7 +11,7 @@
         }
 
         .area-1 {
-            color: white;
+            color: $font-color;
             align-self: center;
             padding-top: 50px;
             padding-left: 20px;
@@ -38,11 +38,19 @@
         .area-3 {
             @extend .area-1;
             grid-area: area-3;
+
+            .img1-nosotros {
+                display: none;
+            }
         }
 
         .area-4 {
             @extend .area-1;
             grid-area: area-4;
+
+            .img2-nosotros {
+                display: none;
+            }
         }
     }
 }

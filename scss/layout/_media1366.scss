@@ -24,9 +24,9 @@
         }
 
         .leer-mas-inicio {
-            padding-left: 140px;
+            padding-right: 200px;
             padding-bottom: 50px;
-            justify-self: start;
+            justify-self: center;
             align-self: center;
 
             a {
@@ -105,23 +105,55 @@
             }
     
             .area-3 {
+                display: flex;
                 grid-column-start: 1;
                 grid-column-end: 3;
                 grid-row-start: 2;
                 grid-row-end: 3;
-                padding-left: 300px;
                 padding-bottom: 40px;
                 align-self: center;
+                gap: 150px;
+
+                .img1-nosotros {
+                    padding-left: 20px;
+                    justify-self: start;
+                    align-self: center;
+
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        grid-column-start: 1;
+                        grid-column-end: 2;
+                        grid-row-start: 2;
+                        grid-row-end: 3;
+                    }
+                }
             }
-    
             .area-4 {
+                display: flex;
                 grid-column-start: 1;
                 grid-column-end: 3;
                 grid-row-start: 2;
                 grid-row-end: 4;
                 align-self: self-end;
-                padding-right: 350px;
                 padding-bottom: 75px;
+                gap: 150px;
+
+                .img2-nosotros {
+                    padding-right: 20px;
+                    padding-top: 50px;
+                    justify-self: end;
+                    align-self: center;
+                    
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        grid-column-start: 2;
+                        grid-column-end: 3;
+                        grid-row-start: 3;
+                        grid-row-end: 4;
+                    }
+                }
             }
         }
     }
@@ -154,6 +186,12 @@
             .redes-sociales {
                 @include position (1, 2, 3, 5);
                 padding-top: 30px;
+
+                .enlaces {
+                    .link-f {
+                        font-size: 1rem;
+                    }
+                }
             }
 
             .ubicacion {

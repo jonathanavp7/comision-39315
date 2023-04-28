@@ -1,3 +1,30 @@
 header {
     background-color: $color-primario;
 }
+
+@media (min-width: 768px){
+    .navbar {
+        .container-fluid {
+            .navbar-brand {
+                img {
+                    width: 180px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px){
+    .navbar {
+        .container-fluid {
+            .navbar-brand {
+                img {
+                    width: 180px;
+                    height: 25px;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}

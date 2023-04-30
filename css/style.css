@@ -560,6 +560,11 @@ header {
     grid-template-rows: repeat(3, 500px);
     grid-template-areas: "area-1 area-2" "area-3 area-3" "area-4 area-4";
   }
+  .grid-nosotros .container h2 {
+    justify-self: start;
+    text-align: start;
+    justify-content: start;
+  }
   .grid-nosotros .container .area-1, .grid-nosotros .container .area-3, .grid-nosotros .container .area-4 {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -588,6 +593,11 @@ header {
     padding-bottom: 40px;
     align-self: start;
     gap: 100px;
+  }
+  .grid-nosotros .container .area-3 h2 {
+    justify-self: end;
+    text-align: end;
+    justify-content: end;
   }
   .grid-nosotros .container .area-3 .img1-nosotros {
     display: flex;

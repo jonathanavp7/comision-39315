@@ -9,7 +9,7 @@
         @include position (1, 2, 3, 4);
         @include flex (white, center, none, center, center);
         padding-bottom: 80px;
-        font-family: 'Roboto', sans-serif;
+        font-family: $font-primaria;
         text-shadow: 2px 2px 2px black;
     }
 

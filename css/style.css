@@ -272,6 +272,7 @@ header {
 }
 .contenedor .contenedor-contacto .telefonos .telefonos-1 p {
   color: white;
+  font-weight: 600;
   padding-left: 20px;
   padding-top: 10px;
 }
@@ -805,7 +806,7 @@ header {
     grid-row-start: 2;
     grid-row-end: 3;
     padding-bottom: 40px;
-    align-self: center;
+    align-self: start;
     gap: 150px;
   }
   .grid-nosotros .container .area-3 .img1-nosotros {

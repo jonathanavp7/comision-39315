@@ -9,15 +9,6 @@
     text-align: $text;
 }
 
-// Mixin Nav
-
-@mixin nav ($color, $weight, $decoration, $padding){
-    color: $color;
-    font-weight: $weight;
-    text-decoration: $decoration;
-    padding: $padding;
-}
-
 // Mixin Grid
 
 @mixin grid ($col, $row, $area){

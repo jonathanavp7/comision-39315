@@ -6,7 +6,7 @@
         h2 {
             @include flex (none, center, center, none, center);
             font-size: 1.56rem;
-            font-family: "Bree Serif", serif;
+            font-family: $font-secundaria;
             padding-bottom: 20px;
         }
 

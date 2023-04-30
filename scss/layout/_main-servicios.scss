@@ -7,7 +7,7 @@
         @include flex (white, center, center, none, center);
         padding-top: 50px;
         padding-bottom: 80px;
-        font-family: "Bree Serif", serif;
+        font-family: $font-secundaria;
     }
 
     .item1, .item2, .item3, .item4, .item5, .item6 {

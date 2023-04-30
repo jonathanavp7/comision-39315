@@ -40,9 +40,7 @@
             grid-area: area-3;
 
             .img1-nosotros {
-                img {
-                    @include tamaño (40px, 40px);
-                }
+                display: none;
             }
         }
 
@@ -51,9 +49,7 @@
             grid-area: area-4;
 
             .img2-nosotros {
-                img {
-                    @include tamaño (40px, 40px);
-                }
+                display: none;
             }
         }
     }

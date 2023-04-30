@@ -230,16 +230,14 @@ header {
 .grid-nosotros .container .area-3 {
   grid-area: area-3;
 }
-.grid-nosotros .container .area-3 .img1-nosotros img {
-  width: 40px;
-  height: 40px;
+.grid-nosotros .container .area-3 .img1-nosotros {
+  display: none;
 }
 .grid-nosotros .container .area-4 {
   grid-area: area-4;
 }
-.grid-nosotros .container .area-4 .img2-nosotros img {
-  width: 40px;
-  height: 40px;
+.grid-nosotros .container .area-4 .img2-nosotros {
+  display: none;
 }
 
 .contenedor {

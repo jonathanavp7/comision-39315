@@ -2,6 +2,22 @@ header {
     background-color: $color-primario;
 }
 
+header {
+    .navbar {
+        .container-fluid {
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            font-family: $font-tercera;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 768px){
     .navbar {
         .container-fluid {

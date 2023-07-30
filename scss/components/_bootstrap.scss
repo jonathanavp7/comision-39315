@@ -8,6 +8,14 @@
     }
 }
 
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 .navbar-nav {
     .nav-item {
         a:hover {

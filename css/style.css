@@ -790,5 +790,13 @@ hr {
     text-align: center;
   }
 }
+@media (width < 600px) {
+  .contenedor-2 .form-container {
+    width: 280px;
+  }
+  .contenedor-mapa iframe {
+    width: 300px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,46 +1,192 @@
-header {
-    background-color: $color-primario;
+.section__container {
+    max-width: $max-width;
+    margin: auto;
+    padding: 5rem 1rem;
 }
 
-header {
-    .navbar {
-        .container-fluid {
-            .collapse {
-                .navbar-nav {
-                    .nav-item {
-                        .nav-link {
-                            font-family: $font-tercera;
-                        }
-                    }
-                }
+.section__header {
+    margin-bottom: 1rem;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+    color: $white;
+}
+
+.section__subheader {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: $text-light;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: $white;
+    background-color: $secondary-color;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        background-color: $secondary-color-dark;
+    }
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg__blur {
+    position: absolute;
+    box-shadow: 0 0 1000px 50px $secondary-color;
+    z-index: -1;
+}
+
+nav {
+    max-width: $max-width;
+    margin: auto;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .nav__logo {
+        max-width: 180px;
+    }
+
+    .nav__links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .link {
+        .link__activo {
+            position: relative;
+            padding-bottom: 0.75rem;
+            color: $white;
+
+            &::after {
+                position: absolute;
+                height: 2px;
+                width: 100%;
+                left: 0;
+                bottom: 0;
+                background-color: $secondary-color;
             }
+        }
+    }
+
+    .link a {
+        position: relative;
+        padding-bottom: 0.75rem;
+        color: $white;
+
+        &::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0;
+            left: 0;
+            bottom: 0;
+            background-color: $secondary-color;
+            transition: 0.3s;
+        }
+    
+        &:hover::after {
+            width: 50%;
         }
     }
 }
 
-@media (min-width: 768px){
-    .navbar {
-        .container-fluid {
-            .navbar-brand {
-                img {
-                    width: 180px;
-                    height: 25px;
-                }
-            }
-        }
-    }
+.menu {
+    display: none;
+    font-size: 30px;
 }
 
-@media (min-width: 1024px){
-    .navbar {
-        .container-fluid {
-            .navbar-brand {
-                img {
-                    width: 180px;
-                    height: 25px;
-                    padding-left: 10px;
-                }
+.header__container {
+    position: relative;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+    // &::before {
+    //     content: "MEDICPC";
+    //     position: absolute;
+    //     bottom: 0;
+    //     right: 20rem;
+    //     font-size: 10rem;
+    //     font-weight: 700;
+    //     line-height: 7rem;
+    //     color: $white;
+    //     opacity: 0.05;
+    //     z-index: -1;
+    // }
+
+    .header__content {
+        .header__blur {
+            bottom: 5rem;
+            right: 0;
+        }
+
+        h4 {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: $secondary-color;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            font-size: 5rem;
+            font-weight: 700;
+            line-height: 6rem;
+            color: $white;
+
+            span {
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke: 1px $white;
             }
+        }
+
+        p {
+            margin-bottom: 2rem;
+            color: $text-light;
+        }
+    }
+
+    .header__image {
+        position: relative;
+
+        &::before {
+            content: "o";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 35rem;
+            font-weight: 400;
+            line-height: 20rem;
+            color: $secondary-color;
+            opacity: .1;
+            z-index: -1;
+        }
+
+        img {
+            max-width: 430px;
+            margin: auto;
         }
     }
 }

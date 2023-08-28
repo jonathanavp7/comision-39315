@@ -1,67 +1,18 @@
-.container-servicios {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    h1 {
-        @include flex (white, center, center, none, center);
-        padding-top: 50px;
-        padding-bottom: 80px;
-        font-family: $font-secundaria;
-    }
-
-    .item1, .item2, .item3, .item4, .item5, .item6 {
+.explore__container {
+    .subtitulo__servicios {
+        color: $secondary-color;
+        margin: 70px 0 50px 0;
         display: flex;
-        justify-content: center;
-    }
-
-    .cards {
-        @include tamaño (280px, 500px);
-        border-radius: 8px;
-        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
-        margin: 20px;
-        text-align: center;
-        transition: all 400ms ease;
-
-        &:hover {
-            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-            transform: translateY(-2%);
+        justify-content: end;
+        padding-right: 20px;
+        
+        h4 {
+            font-size: 1rem;
+            font-weight: 600;
         }
 
-        img {
-            @include tamaño (200px, 120px);
-            border-radius: 5%;
-        }
-
-        h3 {
-            color: $color-primario;
-            padding-top: 30px;
-            font-family: $font-secundaria;
-            font-size: 1.10rem;
-        }
-
-        p {
-            font-size: 0.87rem;
-            padding: 20px;
-            color: $font-color;
-        }
-
-        input {
-            padding: 15px 25px;
-            border: none;
-            font-size: 0.87rem;
-            border-radius: 50px;
-            background-color: $color-primario;
-            color: rgb(49, 49, 49);
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
-
-            &:hover {
-                background-color: #886435;
-                padding: 20px 32px;
-                color: black;
-            }
+        .fa-caret-down {
+            padding-right: 10px;
         }
     }
 }

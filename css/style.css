@@ -482,7 +482,7 @@ hr {
 .contacto-container .contenedor-1 {
   width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   margin-top: 100px;
   flex-wrap: wrap;
@@ -519,6 +519,9 @@ hr {
   font-size: 1rem;
   font-weight: 600;
   color: #f9ac54;
+}
+.contacto-container .contenedor-1 .contacto-info .box .text p {
+  flex-wrap: wrap;
 }
 .contacto-container .contenedor-2 .subtitulo-contacto h4 {
   text-align: center;
@@ -754,6 +757,11 @@ hr {
   }
 }
 @media (width < 900px) {
+  .contenedor-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .contenedor-2 {
     margin-top: 50px;
   }

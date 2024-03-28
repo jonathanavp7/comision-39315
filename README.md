@@ -8,7 +8,8 @@ The repository is currently deployed and accessible [here](https://jonathanavp7.
 
 ## Tecnologías utilizadas
 
- - Html
- - Css
- - Bootstrap
+ - HTML5
+ - CSS
+ - JavaScript
  - SASS
+ - Node.Js
